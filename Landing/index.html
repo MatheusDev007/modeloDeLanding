@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,202 +14,284 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+
+    <style>
+        /* Exemplo de media query para telas pequenas (celulares) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                /* Ajuste do tamanho da fonte */
+            }
+
+            .menu ul {
+                display: block;
+                text-align: center;
+            }
+
+            .menu ul li {
+                margin: 10px 0;
+            }
+
+            .menu-spacing {
+                margin-top: 20px;
+            }
+
+            .grid {
+                display: flex;
+                flex-direction: column;
+                /* Coloca os artigos em uma coluna */
+                gap: 20px;
+                /* Espaçamento entre os artigos */
+            }
+
+            .gallery-img {
+                width: 100%;
+                /* Garante que as imagens ocupem 100% da largura */
+            }
+
+            .grid-one-content {
+                padding: 20px;
+            }
+
+            .responsive-table table {
+                width: 100%;
+                /* A tabela vai ocupar 100% da largura da tela */
+                font-size: 14px;
+                /* Reduz o tamanho da fonte */
+            }
+
+            .responsive-table th,
+            .responsive-table td {
+                padding: 8px;
+                text-align: left;
+            }
+        }
+
+        /* Media query para telas menores (como celulares em modo retrato) */
+        @media (max-width: 480px) {
+            .main-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .intro-text-content p {
+                font-size: 0.9rem;
+            }
+
+            .intro-img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .menu-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .gallery-img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .grid-one-content {
+                padding: 10px;
+            }
+
+            .menu-spacing {
+                margin-top: 10px;
+            }
+        }
+
+        /* Media query para tablets (telas médias) */
+        @media (max-width: 1024px) {
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* Exibe em 2 colunas */
+                gap: 20px;
+            }
+
+            .grid-one-content {
+                padding: 20px;
+            }
+        }
+    </style>
+
 </head>
-<body >
-<aside class="menu white-bg" >
-    <div class="main-content menu-content" >
-    <h1><a class="a" href="#home">LOGO</h1></a>
-    <nav>
-        <ul>
-            <li><a href="#intro">intro</a></li>
-            <li><a href="#grid-one">My Grid</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
 
-        </ul>
-    </nav>
-</div>
-</aside>
-
-<div class="menu-spacing"></div>
-
-<section id="home" class="intro main-bg section">
-    <div class="main-content intro-content">
-    <div class="intro-text-content"> 
-    <h2>January brings us in Firefox 85</h2>
-    <p>To wrap January, we are proud to bring 
-        you the release of Firefox 85. In this version we
-        are bringing you support for the: focus-visible pseudo-class in
-        CSS and associated devtools, and the complete removal of Flash support
-        from Firefox.
-    </p>
-    </div>
-    <div class="intro-img">
-        <img src="image/jsimage.svg" alt="Um homem segurando a logo de CSS3, uma mulher empurrando o logo de JavaScript e outra mulher segurando o logo de HTML5">
-    </div>
-    </div>
-</section>
-
-<div class="menu-spacing"></div>
-<section id="intro" class="white-bg section">
-<div class="main-content top3-content">
-    <h2>TOP 3 JOBS</h2>
-    <p>
-        The release of Apple Silicon-based Macs at the end of last year
-        generated a flurry of news coverage and some surprises at machine's performance.
-        This post details some background information on the experience of porting Firefox
-        to run natively on these CPUs.
-    </p>
-    <p>
-        The release of Apple Silicon-based Macs at the end of last year
-        generated a flurry of news coverage and some surprises at machine's performance.
-        This post details some background information on the experience of porting Firefox
-        to run natively on these CPUs.
-    </p>
-    <p>
-        The release of Apple Silicon-based Macs at the end of last year
-        generated a flurry of news coverage and some surprises at machine's performance.
-        This post details some background information on the experience of porting Firefox
-        to run natively on these CPUs.
-    </p>
-</div>
-</section>
-
-<div class="menu-spacing"></div>
-<section id="grid-one" class="grid-one main-bg section">
-    <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">My Grid</h2>
-        <p class="grid-description">Uma breve descriÃ§Ã£o</p>
-
-        <div class="grid">
-
-        <article>
-        <h3>Teste 1</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Optio ex quisquam ut quae dicta, odio ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione adipisci explicabo,
-        id eligendi voluptate exercitationem.</p>
-        </article>
-        
-        <article>
-        <h3>Teste 2</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Optio ex quisquam ut quae dicta, odio ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione
-        adipisci explicabo,
-        id eligendi voluptate exercitationem.</p>
-        </article>
-
-        <article>
-        <h3>Teste 3</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Optio ex quisquam ut quae dicta, odio ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione
-        adipisci explicabo,
-        id eligendi voluptate exercitationem.</p>
-        </article>
+<body>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1><a class="a" href="#home">LOGO</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#grid-one">My Grid</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </aside>
 
-</section>
+    <div class="menu-spacing"></div>
 
-
-<section id="gallery" class="grid-one white-bg section">
-    <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Gallery</h2>
-
-        <div class="grid">
-            <div class="gallery-img">
-        <img src="https://source.unsplash.com/random/360x360?r=1" 
-        alt="random imagem from unsplash" />
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>January brings us in Firefox 85</h2>
+                <p>To wrap January, we are proud to bring you the release of Firefox 85. In this version we are bringing
+                    you support for the: focus-visible pseudo-class in CSS and associated devtools, and the complete
+                    removal of Flash support from Firefox.</p>
+            </div>
+            <div class="intro-img">
+                <img src="image/jsimage.svg"
+                    alt="Um homem segurando a logo de CSS3, uma mulher empurrando o logo de JavaScript e outra mulher segurando o logo de HTML5">
+            </div>
         </div>
+    </section>
 
-        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=2" alt="random imagem from unsplash" />
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>TOP 3 JOBS</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at machine's performance. This post details some background information on the experience
+                of porting Firefox to run natively on these CPUs.</p>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at machine's performance. This post details some background information on the experience
+                of porting Firefox to run natively on these CPUs.</p>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at machine's performance. This post details some background information on the experience
+                of porting Firefox to run natively on these CPUs.</p>
         </div>
-        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=3" alt="random imagem from unsplash" />
+    </section>
+
+    <div class="menu-spacing"></div>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ex quisquam ut quae dicta, odio
+                        ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione adipisci explicabo, id
+                        eligendi voluptate exercitationem.</p>
+                </article>
+
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ex quisquam ut quae dicta, odio
+                        ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione adipisci explicabo, id
+                        eligendi voluptate exercitationem.</p>
+                </article>
+
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ex quisquam ut quae dicta, odio
+                        ad veritatis perferendis voluptatem voluptates assumenda quod sit ratione adipisci explicabo, id
+                        eligendi voluptate exercitationem.</p>
+                </article>
+            </div>
         </div>
-        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=4" alt="random imagem from unsplash" />
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="random imagem from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="random imagem from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="random imagem from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="random imagem from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="random imagem from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="random imagem from unsplash" />
+                </div>
+            </div>
         </div>
-        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=5" alt="random imagem from unsplash" />
+    </section>
+
+    <div class="menu-spacing"></div>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at machine's performance. This post details some background information on the experience
+                of porting Firefox to run natively on these CPUs.</p>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at machine's performance. This post details some background information on the experience
+                of porting Firefox to run natively on these CPUs.</p>
+
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
-        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?r=6" alt="random imagem from unsplash" />
-        </div>
-        </div>
-    </div>
-
-</section>
-
-<div class="menu-spacing"></div>
-<section id="pricing" class="white-bg section">
-    <div class="main-content top3-content">
-        <h2>Pricing</h2>
-        <p>
-            The release of Apple Silicon-based Macs at the end of last year
-            generated a flurry of news coverage and some surprises at machine's performance.
-            This post details some background information on the experience of porting Firefox
-            to run natively on these CPUs.
-        </p>
-        <p>
-            The release of Apple Silicon-based Macs at the end of last year
-            generated a flurry of news coverage and some surprises at machine's performance.
-            This post details some background information on the experience of porting Firefox
-            to run natively on these CPUs.
-        </p>
-
-        <div class="responsive-table">
-        <table>
-            <caption>Pricing Table</caption>
-
-            <thead>
-                <tr>
-                    <th>Title 1</th>
-                    <th>Title 2</th>
-                    <th>Title 3</th>
-                    <th>Title 4</th>
-                    <th>Title 5</th>
-
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Content 1</td>
-                    <td>Content 2</td>
-                    <td>Content 3</td>
-                    <td>Content 4</td>
-                    <td>Content 5</td>
-                </tr>
-                <tr>
-                    <td>Content 1</td>
-                    <td>Content 2</td>
-                    <td>Content 3</td>
-                    <td>Content 4</td>
-                    <td>Content 5</td>
-                </tr>
-                <tr>
-                    <td>Content 1</td>
-                    <td>Content 2</td>
-                    <td>Content 3</td>
-                    <td>Content 4</td>
-                    <td>Content 5</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Testando</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
-    </div>
-</section>
-
+    </section>
 </body>
+
 </html>
